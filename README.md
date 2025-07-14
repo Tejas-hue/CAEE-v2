@@ -57,7 +57,34 @@
 
 ## Model Performance
 
-> _(To be added soon: test F1, precision, recall, etc.)_
+> CAEE-v2 was evaluated on a held-out validation set of 5,426 emotion-labeled sentences.
+> The task was multi-label need classification (i.e., each sentence may imply multiple human needs simultaneously).
+
+**Aggregate Metrics:**
+
+- Micro F1-score: **0.65**
+- Macro F1-score: **0.63**
+- Sample-based F1-score: **0.65**
+- Weighted F1-score: **0.65**
+
+**Per-Need F1 Scores:**
+
+| Need            | Precision | Recall | F1-score | Support |
+|-----------------|-----------|--------|----------|---------|
+| acknowledgment  | 0.81      | 0.87   | 0.84     | 306     |
+| celebration     | 0.54      | 0.60   | 0.57     | 121     |
+| clarity         | 0.53      | 0.69   | 0.60     | 522     |
+| comfort         | 0.51      | 0.56   | 0.53     | 232     |
+| connection      | 0.64      | 0.81   | 0.71     | 616     |
+| motivation      | 0.52      | 0.48   | 0.50     | 211     |
+| neutral         | 0.61      | 0.71   | 0.66     | 1592    |
+| safety          | 0.59      | 0.60   | 0.60     | 85      |
+| support         | 0.64      | 0.66   | 0.65     | 907     |
+| understanding   | 0.53      | 0.72   | 0.61     | 75      |
+| validation      | 0.57      | 0.68   | 0.62     | 759     |
+
+> This evaluation reveals strengths in detecting common emotional needs (support, connection, acknowledgment), while also maintaining decent generalization across rarer ones like celebration and safety.
+
 
 ---
 
